@@ -15,7 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from creative import Creative
+from .creative import Creative
 
 
 REQUIRED_INLINE = ['AdSystem', 'AdTitle']
@@ -78,4 +78,3 @@ class Ad(object):
         creative = Creative(_type, options)
         self.creatives.append(creative)
         return creative
-
